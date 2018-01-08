@@ -1,0 +1,17 @@
+couldn't read file "tcl/lib/ns-mobilenode.tcl": no such file or directory
+    while executing
+"source.orig tcl/lib/ns-mobilenode.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel source.orig [list $fileName]"
+    invoked from within
+"if [$instance_ is_http_url $fileName] {
+set buffer [$instance_ read_url $fileName]
+uplevel eval $buffer
+} else {
+uplevel source.orig [list $fileName]
+..."
+    (procedure "source" line 8)
+    invoked from within
+"source tcl/lib/ns-mobilenode.tcl"
+    (file "tcl/ex/wireless.tcl" line 184)

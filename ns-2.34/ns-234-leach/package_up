@@ -1,0 +1,23 @@
+#!/bin/bash
+make clean
+rm mit.tar.gz
+tar -cvf mit.tar mit
+tar -uvf mit.tar apps/app.*
+tar -uvf mit.tar mac/channel.cc
+tar -uvf mit.tar mac/ll.h
+tar -uvf mit.tar mac/wireless-phy.*
+tar -uvf mit.tar mac/phy.*
+tar -uvf mit.tar mac/mac.cc
+tar -uvf mit.tar mac/mac-sensor*
+tar -uvf mit.tar trace/cmu-trace.*
+tar -uvf mit.tar common/packet.*
+tar -uvf mit.tar common/mobilenode.cc
+tar -uvf mit.tar tcl/mobility/leach-c.tcl
+tar -uvf mit.tar tcl/mobility/leach.tcl
+tar -uvf mit.tar tcl/mobility/mte.tcl
+tar -uvf mit.tar tcl/mobility/stat-clus.tcl
+tar -uvf mit.tar tcl/ex/wireless.tcl
+tar -uvf mit.tar test
+tar -uvf mit.tar leach_test
+tar -uvf mit.tar package_up
+gzip mit.tar

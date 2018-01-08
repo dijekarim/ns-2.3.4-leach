@@ -1,0 +1,16 @@
+# LD_LIBRARY_PATH
+OTCL_LIB=/data/ns-allinone-2.34/otcl-1.143
+NS2_LIB=/data/ns-allinone-2.34/lib
+X11_LIB=/usr/X11R6/lib
+USR_LOCAL_LIB=/usr/local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$OTCL_LIB:$NS2_LIB:$X11_LIB:$USR_LOCAL_LIB
+# TCL_LIBRARY
+TCL_LIB=/data/ns-allinone-2.34/tcl8.4.18/library
+USR_LIB=/usr/lib
+export TCL_LIBRARY=$TCL_LIB:$USR_LIB
+# PATH
+XGRAPH=/data/ns-allinone-2.34/bin:/data/ns-allinone-2.34/tcl8.4.18/unix:/data/ns-allinone-2.34/tk8.4.18/unix
+#the above two lines beginning from xgraph and ending with unix should come on the same line
+NS=/data/ns-allinone-2.34/ns-2.34/ 
+NAM=/data/ns-allinone-2.34/nam-1.14/ 
+PATH=$PATH:$XGRAPH:$NS:$NAM
